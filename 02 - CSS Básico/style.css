@@ -1,5 +1,10 @@
 #principal {
     color: red;
+    text-align: justify;
+    background-image: url(https://www.significadofacil.com/wp-content/uploads/2019/07/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #título {
@@ -9,3 +14,36 @@
 .texto_verde {
     color: green;
 }
+
+/* == unidades de medidas == */
+#cm {
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+#mm {
+    background-color: red;
+    width: 1mm;
+    height: 1mm;
+}
+#in {
+    background-color: blue;
+    width: 1in;
+    height: 1in;
+}
+#px {
+    background-color: red;
+    width: 1px;
+    height: 1px;
+}
+#pt {
+    background-color: blue;
+    width: 1pt;
+    height: 1pt;
+}
+#pc {
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}
+
