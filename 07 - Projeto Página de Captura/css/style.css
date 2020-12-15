@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    font-weight: 900;
+    background-color: #fd79a8;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title{
+    font-size: 24px;
+}
+
+section{
+    /*color: white;*/
+    padding: 20px;
+    background-image: url(../images/palestrante.jpeg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #fd79a8;
+    font-weight: 900;
+}
+
+select{
+    /*-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;*/
+
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+}
