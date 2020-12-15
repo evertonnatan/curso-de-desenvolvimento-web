@@ -7,7 +7,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    background-image: url(../images/neuronios.jpeg);
+    background-size: cover;
 }
 
 .container{
@@ -73,4 +74,31 @@ select{
     background-image: url(../images/arrow.png);
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) center;
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.picture{
+    width: 220px;
+}
+
+.description{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
 }
