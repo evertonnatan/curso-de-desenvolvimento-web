@@ -21,3 +21,30 @@ for(let i = 0; i < num; i++) {
 lista.innerHTML = conteudo
 
 // Usando atributos personalizados com "dataset"
+
+
+// Configurando os controles do vídeo:
+
+let video = document.getElementById("video1")
+
+function retroceder(){
+    video.currentTime -= 15
+}
+function avancar(){
+    video.currentTime += 15
+}
+function diminuir_velocidade(){
+    video.playbackRate -= 0.1
+}
+function aumentar_velocidade(){
+    video.playbackRate += 0.1
+}
+function play(){
+    video.play()
+}
+function stop(){
+    video.pause()
+    video.currentTime = 0
+}
+
+// DESAFIO: COMO ESCONDER OS CONTROLES DO VÍDEO??

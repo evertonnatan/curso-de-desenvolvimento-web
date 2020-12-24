@@ -37,16 +37,17 @@
     
     <div class="container">
 
-        <video class="video" src="./assets/video.mp4"></video>
+        <video id="video1" class="video" src="./assets/video.mp4"></video>
 
         <div class="controle">
-            <img class="btn" src="./imagens/back.png" alt="">
-            <img class="btn" src="./imagens/foward.png" alt="">
-            <img class="btn" src="./imagens/increase.png" alt="">
-            <img class="btn" src="./imagens/decrease.png" alt="">
-            <img class="btn" src="./imagens/play.jpg" alt="">
-            <img class="btn" src="./imagens/stop.png" alt="">
+            <img class="btn" onclick="retroceder()" src="./imagens/back.png" alt="">
+            <img class="btn" onclick="avancar()" src="./imagens/foward.png" alt="">
+            <img class="btn" onclick="diminuir_velocidade()" src="./imagens/decrease.png" alt="">
+            <img class="btn" onclick="aumentar_velocidade()" src="./imagens/increase.png" alt="">
+            <img class="btn" onclick="play()" src="./imagens/play.jpg" alt="">
+            <img class="btn" onclick="stop()" src="./imagens/stop.png" alt="">
         </div>
+        <p>DESAFIO: COMO ESCONDER OS CONTROLES DO VÍDEO??</p>
 
     </div>
 
