@@ -3,11 +3,53 @@
 <head>
     <title>Document</title>
 </head>
+
+<style>
+    .container{
+        width: 640px;
+        position: relative;
+        height: 360px;
+    }
+    .video{
+        width: 100%;
+    }
+    .controle{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .btn{
+        position: relative;
+        width: 40px;
+        padding: 10px;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+
+</style>
 <body>
     <img src="./imagens/pic01.jpg" id="kratos">
 
     <ul id="lista" num="20"></ul>
     
+    <div class="container">
+
+        <video class="video" src="./assets/video.mp4"></video>
+
+        <div class="controle">
+            <img class="btn" src="./imagens/back.png" alt="">
+            <img class="btn" src="./imagens/foward.png" alt="">
+            <img class="btn" src="./imagens/increase.png" alt="">
+            <img class="btn" src="./imagens/decrease.png" alt="">
+            <img class="btn" src="./imagens/play.jpg" alt="">
+            <img class="btn" src="./imagens/stop.png" alt="">
+        </div>
+
+    </div>
+
     <script src="./scripts.js"></script>
 
     
