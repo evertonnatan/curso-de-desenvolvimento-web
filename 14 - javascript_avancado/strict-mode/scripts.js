@@ -9,7 +9,7 @@ function imprimir1() {
 }
 
 imprimir1()
-console.log(window)
+//console.log(window)
 
 
 //DEFININDO A VARIÁVEL GLOBALMENTE:
@@ -19,6 +19,6 @@ function imprimir2() {
 }
 
 imprimir2()
-console.log(window)
+//console.log(window)
 
 // O "use strict" TORNA OBRIGATÓRIA A DECLARAÇÃO DE TODAS AS VARIÁVEIS NO CÓDIGO.
