@@ -17,19 +17,25 @@ function handleClick(event) {
             alert("O Jogo Acabou! - O vencedor foi o jogador " + playerTime)
         }, 40);
     }
-    updateSquares()
+    updateSquare(postion)
 }
 
-function updateSquares() {
-
-    let squares = document.querySelectorAll(".square")
-
-    squares.forEach((square) => {
-        let postion = square.id
-        let symbol = board[postion]
-
-        if (symbol != '') {
-            square.innerHTML = `<div class='${symbol}'></div>`
-        }
-    })
+function updateSquare(postion) {
+    let square = document.getElementById(postion.toString())
+    let symbol = board[postion]
+    square.innerHTML = `<div class='${symbol}'></div>`
 }
+
+// function updateSquares() {
+
+//     let squares = document.querySelectorAll(".square")
+
+//     squares.forEach((square) => {
+//         let postion = square.id
+        
+
+//         if (symbol != '') {
+            
+//         }
+//     })
+// }

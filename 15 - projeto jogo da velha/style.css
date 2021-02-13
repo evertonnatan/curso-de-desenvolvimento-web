@@ -3,10 +3,13 @@
 
 body {
     text-align: center;
+    background: #262;
 }
 
 h1 {
     font-family: 'Syne Mono', monospace;
+    font-weight: bold;
+    color: #fff;
 }
 
 h1::selection {
@@ -50,4 +53,15 @@ h1::selection {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.btn {
+    background: #3CB371;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Syne Mono', monospace;
+    font-weight: bold;
 }
