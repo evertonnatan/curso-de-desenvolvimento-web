@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
-*{
-    font-family: 'ABeeZee', sans-serif;
-}
 
 body {
     text-align: center;
-
 }
 
 h1 {
-    color: blue;
+    font-family: 'Syne Mono', monospace;
+}
+
+h1::selection {
+    background: red;
+    color: #fff;
 }
 
 .square {
     width: 100px;
     height: 100px;
-    background-color: #e0e094;
+    background-color: darkseagreen;
     border: 1px solid gray;
     display: inline-block;
 }
@@ -27,7 +28,7 @@ h1 {
 
 .o:after {
     position: absolute;
-    content: "\2623";
+    content: "\1F6E1";
     font-size: 50px;
     line-height: 100px;
     top: 0;
@@ -42,7 +43,7 @@ h1 {
 
 .x:after {
     position: absolute;
-    content: "\1F300";
+    content: "\2694";
     font-size: 50px;
     line-height: 100px;
     top: 0;
