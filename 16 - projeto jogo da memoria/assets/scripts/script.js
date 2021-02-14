@@ -14,7 +14,30 @@ let members = [
     'zetsu'
 ]
 
-createCardsFromMembers(members)
+let cards = null
+
+startGame()
+
+function startGame() {
+    cards = createCardsFromMembers(members)
+    shuffleCards(cards)
+
+    console.log(cards)
+}
+
+function shuffleCards(cards) {
+    let currentIndex = cards.length
+    let randomIndex = 0
+
+    while(currentIndex !== 0) {
+
+        randomIndex = Math.floor(Math.random() * currentIndex)
+        currentIndex--
+
+        [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex], cards[randomIndex]]
+    }
+}
+
 
 function createCardsFromMembers(members) {
     let cards = []
