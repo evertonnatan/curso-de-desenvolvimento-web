@@ -22,7 +22,11 @@ function startGame() {
     cards = createCardsFromMembers(members)
     shuffleCards(cards)
 
-    console.log(cards)
+    initializeCards(cards)
+}
+
+function initializeCards(cards) {
+    let gameBoard = document.getElementById("gameBoard")
 }
 
 function shuffleCards(cards) {
