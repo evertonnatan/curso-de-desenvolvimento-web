@@ -1,5 +1,5 @@
 let game = {
-    members = [
+    members: [
         'itachi',
         'deidara',
         'hidan',
