@@ -3,27 +3,11 @@ const BACK = "card_back"
 const CARD = "card"
 const ICON = "icon"
 
-let members = [
-    'itachi',
-    'deidara',
-    'hidan',
-    'kakuzu',
-    'kisame',
-    'konan',
-    'pain',
-    'sasori',
-    'tobi',
-    'zetsu'
-]
-
-let cards = null
-
 startGame()
 
 function startGame() {
-    cards = createCardsFromMembers(members)
-    shuffleCards(cards)
-    initializeCards(cards)
+    game.createCardsFromMembers()
+    initializeCards(game.createCardsFromMembers())
 }
 
 function initializeCards(cards) {
@@ -57,47 +41,6 @@ function createCardFace(face, card, element) {
         cardElementFace.innerHTML = "&lt/&gt"
     }
     element.appendChild(cardElementFace)
-}
-
-function shuffleCards(cards) {
-    let currentIndex = cards.length
-    let randomIndex = 0
-
-    while(currentIndex !== 0) {
-
-        randomIndex = Math.floor(Math.random() * currentIndex)
-        currentIndex--
-
-        [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex], cards[randomIndex]]
-    }
-}
-
-
-function createCardsFromMembers(members) {
-    let cards = []
-
-    members.forEach(member => {
-        cards.push(createPairFromMember(member))
-    })
-
-    return cards.flatMap(pair => pair)
-}
-
-function createPairFromMember(member) {
-
-    return [{
-        id: createIdWithMember(member),
-        icon: member,
-        flipped: false,
-    }, {
-        id: createIdWithMember(member),
-        icon: member,
-        flipped: false,
-    }]
-}
-
-function createIdWithMember(member) {
-    return member + parseInt(Math.random() * 1000)
 }
 
 function flipCard() {
