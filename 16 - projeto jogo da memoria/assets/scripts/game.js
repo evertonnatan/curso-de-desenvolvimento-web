@@ -3,6 +3,20 @@ let game = {
     lockMode: false,
     firstCard: null,
     secondCard: null,
+    members: [
+        'itachi',
+        'deidara',
+        'hidan',
+        'kakuzu',
+        'kisame',
+        'konan',
+        'pain',
+        'sasori',
+        'tobi',
+        'zetsu'
+    ],
+    
+    cards: null,
 
     setCard: function (id) {
         let card = this.cards.filter(card => card.id === id) [0]
@@ -44,21 +58,6 @@ let game = {
     checkGameOver() {
         return this.cards.filter(card => !card.flipped).length == 0
     },
-    members: [
-        'itachi',
-        'deidara',
-        'hidan',
-        'kakuzu',
-        'kisame',
-        'konan',
-        'pain',
-        'sasori',
-        'tobi',
-        'zetsu'
-    ],
-    
-    cards: null,
-
     createCardsFromMembers: function () {
         this.cards = []
     
