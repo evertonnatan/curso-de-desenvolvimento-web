@@ -13,7 +13,17 @@ let game = {
         'pain',
         'sasori',
         'tobi',
-        'zetsu'
+        'zetsu',
+        'gaara',
+        'hashirama',
+        'jiraya',
+        'kakashi',
+        'madara',
+        'minato',
+        'naruto',
+        'sakura',
+        'sasuke',
+        'tobirama',
     ],
     
     cards: null,

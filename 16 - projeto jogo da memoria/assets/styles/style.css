@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #c7cdd3;
+    background-color: rgba(167, 180, 310, 45.9);
 }
 
 .card {
@@ -54,7 +54,7 @@ body {
 
 .card_back {
     color: #101c2c;
-    background-color: #05c3ff;
+    background-color: #05C307;
     font-size: 30px;
     /* display: none; */
 }
@@ -85,6 +85,8 @@ body {
 #gameBoard {
     max-width: 700px;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
