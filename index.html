@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery</title>
+    <style>
+        #square {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <button id="button">Fade Toggle</button>
+
+    <div id="square"></div>
     
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <!-- Para usar o Jquery, basta "chamá-lo" com o "$" -->
+
+    <script>
+        $("#button").click(() => {
+            $("#square").fadeToggle()
+            // Outros métodos:
+            // FadeOut, FadeIn, FadeTo
+        });
+
+        
+    </script>
+
+    document
 </body>
 </html>
