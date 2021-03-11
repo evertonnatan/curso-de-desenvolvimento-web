@@ -19,3 +19,5 @@ let objeto = {
 }
 
 objeto.print10().print10().print20().print20().print10().print10()
+
+
