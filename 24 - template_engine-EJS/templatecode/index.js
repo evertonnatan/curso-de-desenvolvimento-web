@@ -5,14 +5,17 @@ const app = express()
 
 let users = [
     {
+        id: 0,
         name:"Everton Nathan", 
         phone: "(566)7896-8541"
     },
     {
+        id: 1,
         name:"Everton Madara", 
         phone: "(566)7896-6541"
     },
     {
+        id: 2,
         name:"Everton Dante", 
         phone: "(566)7896-4141"
     },
