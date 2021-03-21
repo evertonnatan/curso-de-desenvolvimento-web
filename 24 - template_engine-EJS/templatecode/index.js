@@ -1,15 +1,13 @@
 const express = require('express')
 const fs = require('fs')
+const path = require('path')
 const app = express()
 
-let user = {
-    id: 0,
-    name: "Nathan",
-    phone: "(51)234-4321",
-}
+app.set("views", path.join(__dirname, 'views'))
+app.set("view engine", "ejs")
 
 app.get("/", (req, res) => {
-    res.send("<h1>Hello World</h1>")
+    res.render('user')
 })
 
 app.listen(3000, () => {
